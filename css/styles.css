@@ -1,4 +1,11 @@
 body{
-  color: #fff;
   background-color: #0477BD;
+}
+
+/*Nav Styles*/
+.main_nav{
+  background-color: #000;
+}
+a{
+  color: white;
 }
