@@ -1,5 +1,6 @@
 body{
   background-color: #0477BD;
+  color: #fff;
 }
 
 /*Sidebar Styles*/
@@ -23,10 +24,10 @@ body{
 
 /*Change sidebar to display*/
 #wrap.menuDisplayed #sidebar-wrap{
-  width: 250px;
+  width: 225px;
 }
 #wrap.menuDisplayed #content-wrap{
-  padding-left: 250px;
+  padding-left: 225px;
 }
 
 .sidebar-nav{
@@ -42,8 +43,14 @@ body{
 .sidebar-nav li a{
   display: block;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 .sidebar-nav li a:hover{
-  background-color: black;
+  background-color: #000;
+}
+
+.nav-logo{
+  width: 150px;
+  height: auto;
+  margin: 35px;
 }
