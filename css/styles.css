@@ -1,6 +1,7 @@
 body{
   background-color: #0477BD;
   color: #fff;
+  font-family: "brandon-grotesque",sans-serif;
 }
 
 /*Sidebar Styles*/
@@ -136,5 +137,14 @@ body{
 
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s
+}
+/*Home Page Styles*/
+.jumbotron{
+  margin-top: 50px;
+  background-color: #0477BD;
+}
+.jumbo-txt{
+  font-weight: 700;
+  text-shadow: 5px 5px 1px #045D89;
 }
