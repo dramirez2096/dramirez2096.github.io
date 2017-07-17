@@ -20,7 +20,8 @@ body{
   width: 100%;
   position: absolute;
   padding: 15px;
-  transition: padding 0.5s ease 0s;
+  left: 0px;
+  transition: all 0.5s ease 0s;
 }
 
 /*Change sidebar to display*/
@@ -28,17 +29,18 @@ body{
   width: 225px;
 }
 #wrap.menuDisplayed #content-wrap{
-  padding-left: 225px;
+  left: 225px;
+  /*padding-left: 225px;*/
+  /*overflow: hidden;*/*/
 }
 
 .sidebar-nav{
   padding: 0px;
   list-style: none;
-  min-width: 150px;
+  min-width: 225px;
 }
 
 .sidebar-nav li{
-  text-indent: 20px;
   line-height: 40px;
 }
 .sidebar-nav li a{
@@ -140,11 +142,42 @@ body{
   transition-delay: 0s, 0.3s
 }
 /*Home Page Styles*/
+@keyframes fade {
+    from {
+      opacity: 0;}
+    to {
+      opacity: 1; }
+}
 .jumbotron{
   margin-top: 50px;
   background-color: #0477BD;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .jumbo-txt{
+  display: inline;
   font-weight: 700;
   text-shadow: 5px 5px 1px #045D89;
+}
+.hello{
+  opacity: 0;
+  margin-right: 20px;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+.im{
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.home-txt{
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
