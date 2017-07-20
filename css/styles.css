@@ -1,12 +1,13 @@
 body{
   background-color: #0477BD;
   color: #fff;
+  font-family: "brandon-grotesque",sans-serif;
 }
 
 /*Sidebar Styles*/
 #sidebar-wrap{
   z-index: 1;
-  position: absolute;
+  position: fixed;
   width: 0px;
   height: 100%;
   overflow-y: hidden;
@@ -19,7 +20,8 @@ body{
   width: 100%;
   position: absolute;
   padding: 15px;
-  transition: padding 0.5s ease 0s;
+  left: 0px;
+  transition: all 0.5s ease 0s;
 }
 
 /*Change sidebar to display*/
@@ -27,18 +29,21 @@ body{
   width: 225px;
 }
 #wrap.menuDisplayed #content-wrap{
-  padding-left: 225px;
+  left: 225px;
+  /*padding-left: 225px;*/
+  /*overflow: hidden;*/*/
 }
 
 .sidebar-nav{
   padding: 0px;
   list-style: none;
-  min-width: 150px;
+  min-width: 225px;
 }
 
 .sidebar-nav li{
-  text-indent: 20px;
-  line-height: 40px;
+  line-height: 45px;
+  font-weight: 300;
+  font-size: 18px;
 }
 .sidebar-nav li a{
   display: block;
@@ -54,12 +59,20 @@ body{
   height: auto;
   margin: 35px;
 }
-
+.nav-soc-contain{
+  min-width: 225px;
+  position: absolute;
+  bottom: 20px;
+}
+.nav-soc{
+  margin: 0px 10px;
+  color: #fff;
+}
 /*Hamburger Styles*/
 .c-hamburger {
   background-color: #0477BD;
   display: block;
-  position: relative;
+  position: fixed;
   overflow: hidden;
   width: 65px;
   height: 65px;
@@ -136,5 +149,57 @@ body{
 
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s
+}
+/*Home Page Styles*/
+@keyframes fade {
+    from {
+      opacity: 0;}
+    to {
+      opacity: 1; }
+}
+.margin{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.jumbotron{
+  margin-top: 115px;
+  background-color: #0477BD;
+}
+.jumbotron h1{
+  /*font-size: 90px;*/
+}
+.jumbo-txt{
+  display: inline;
+  font-weight: 700;
+  text-shadow: 5px 5px 1px #045D89;
+}
+.hello{
+  opacity: 0;
+  margin-right: 20px;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+.im{
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.home-txt{
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+/*Media Queries*/
+@media only screen and (max-width: 1000px) {
+  .margin{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
