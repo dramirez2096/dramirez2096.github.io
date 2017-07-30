@@ -18,11 +18,15 @@
     <!-- Side Bar -->
     <div id="sidebar-wrap">
       <a href="index.html"><img class="nav-logo" src="img/logo.png"/></a>
-      <!-- <h3 class="text-center">David Ramirez</h3> -->
+      <div class="name-box text-center">
+        <a href="index.html">
+          <p class="text-uppercase">David Ramirez</p>
+        </a>
+      </div>
       <ul class="sidebar-nav text-center">
         <li><a href="#">About</a></a></li>
         <li><a href="wd.html">Web Design</a></li>
-        <li><a href="#">Graphic Design</a></li>
+        <!-- <li><a href="#">Graphic Design</a></li> -->
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-soc-contain text-center">
@@ -46,22 +50,65 @@
             </button><!--Hamburger Menu end-->
             <div class="jumbotron text-center margin">
               <h1 class="head-txt">Lets Get in Touch</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque fugit, dolores? Aliquam recusandae dolores non dolor. Dolor sit, optio pariatur quaerat officiis minus voluptatum ducimus porro molestiae aspernatur, ad placeat.</p>
+              <p>If you want to get in touch with me click my contact information and let's make something happen. You can also learn more about me by clicking the links down bellow.</p>
               <div class="grid-container contact-grid">
-                <div class="contact-icon">
-                  <i class="fa fa-phone fa-5x contact-fa" aria-hidden="true"></i>
+                <div class="contact-icon-wrap">
+                  <div class="contact-icon">
+                    <i class="fa fa-phone fa-5x contact-fa" aria-hidden="true"></i>
+                  </div>
+                  <p> Give me a call</p>
                 </div>
-                <div class="contact-icon">
-                  <i class="fa fa-envelope fa-5x contact-fa" aria-hidden="true"></i>
+                <div class="contact-icon-wrap">
+                  <a href="mailto:dramirez2096@gmail.com">
+                    <div class="contact-icon">
+                      <i class="fa fa-envelope fa-5x contact-fa"   aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <p>Send me an email</p>
                 </div>
-                <div class="contact-icon">
-                  <i class="fa fa-github-alt fa-5x contact-fa" aria-hidden="true"></i>
+                <div class="contact-icon-wrap">
+                  <a href="https://github.com/dramirez2096" target="blank">
+                    <div class="contact-icon">
+                      <i class="fa fa-github-alt fa-5x contact-fa"     aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <p>Check me out on Github</p>
                 </div>
-                <div class="contact-icon">
-                  <i class="fa fa-linkedin fa-5x contact-fa" aria-hidden="true"></i>
+                <div class="contact-icon-wrap">
+                  <a href="https://www.linkedin.com/in/david-ramirez-39a377128/" target="blank">
+                    <div class="contact-icon">
+                      <i class="fa fa-linkedin fa-5x contact-fa"   aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <p>Check me out on LinkedIn</p>
                 </div>
+              </div><!--End of grid container-->
+
+              <div class="contact-form">
+                <p>Or you can just fill out this convenient little form. Whichever works for you.</p>
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Message</label>
+                    <textarea class="form-control" rows="3" placeholder="Type your message here"></textarea>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">I am not a robot
+                    </label>
+                  </div>
+                  <button type="submit" class="form-btn btn btn-default">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </button>
+                </form>
               </div>
-              
             </div>
           </div>
         </div>
