@@ -1,8 +1,8 @@
 body{
   background-color: #0477BD;
-  /*background-image: url(../img/background.png);*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
+  background-image: url(../img/background-3.png);
+  background-size: 100%;
+  background-attachment: fixed;
   color: #fff;
   font-family: "brandon-grotesque",sans-serif;
 }
@@ -226,8 +226,8 @@ body{
   height: 290px;
   width: 290px;
   border: solid #0477BD;
-  background-color: #fff;
-  /*background-color: #1E1E1E;*/
+  /*background-color: #fff;*/
+  background-color: #1E1E1E;
   /*background-size: cover;*/
   /*background-position: center;*/
 }
@@ -242,8 +242,8 @@ body{
 .grid-caption{
   position: relative;
   top: -200px;
-  color: #0477BD;
-  /*color: #fff;*/
+  /*color: #0477BD;*/
+  color: #fff;
   opacity: 0;
   transition: all 0.2s linear;
 }
@@ -305,6 +305,20 @@ a:-webkit-any-link{
 
 }
 /*End Contact Styles*/
+
+/*About Page Styles*/
+.portrait{
+  width: 400px;
+  height: 400px;
+  background-image: url(../img/portrait.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*End About Styles*/
 
 /*Media Queries*/
 @media only screen and (max-width: 1000px) {

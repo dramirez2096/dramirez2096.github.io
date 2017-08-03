@@ -25,19 +25,11 @@
         </a>
       </div>
       <ul class="sidebar-nav text-center">
-        <li><a href="#">About</a></a></li>
+        <li><a href="about.html">About</a></a></li>
         <li><a href="wd.html">Web Design</a></li>
         <!-- <li><a href="#">Graphic Design</a></li> -->
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-soc-contain text-center">
-        <a href="https://github.com/dramirez2096" target="blank">
-          <i class="fa fa-github fa-2x nav-soc" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/david-ramirez-39a377128/" target="blank">
-          <i class="fa fa-linkedin fa-2x nav-soc" aria-hidden="true"></i>
-        </a>
-     </div>
     </div>
     <!-- End Sidebar -->
 
@@ -72,10 +64,14 @@
                       <h2 class=grid-caption>PokeMart Mock Website</h2>
                     </a>
                   </div>
-
+                  <div class="grid-item web-4">
+                    <a href="https://geekwiseb2.github.io/restaurante-july-17-dramirez2096/" target="blank">
+                      <img src="img/web-4.png" alt="1" class="img-responsive">
+                      <h2 class=grid-caption>Restaurante</h2>
+                    </a>
+                  </div>
                 <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+                <!-- <div class="grid-item"></div> -->
               </div>
             </div>
           </div>
@@ -83,35 +79,7 @@
       </div>
     </div><!--end content-wrap-->
   <!-- End Content -->
-
-  <script>
-      $("#menu-toggle").click( function (e){
-          e.preventDefault();
-          $("#wrap").toggleClass("menuDisplayed");
-      });
-  </script>
-
-  <script>
-  (function() {
-
-"use strict";
-
-var toggles = document.querySelectorAll(".c-hamburger");
-
-for (var i = toggles.length - 1; i >= 0; i--) {
-  var toggle = toggles[i];
-  toggleHandler(toggle);
-};
-
-function toggleHandler(toggle) {
-  toggle.addEventListener( "click", function(e) {
-    e.preventDefault();
-    (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-  });
-}
-
-})();
-  </script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
